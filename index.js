@@ -28,9 +28,9 @@ board.forEach((square) => {
     if (checkWinner() === true) {
       Swal.fire({
         title: "Winner",
-        text: "Player " + winner() + " has won!",
+        text: "Jugador " + winner() + " ha ganado!",
         icon: "success",
-        confirmButtonText: "Play Again",
+        confirmButtonText: "Jugar de nuevo",
       }).then(function (isConfirm) {
         if (isConfirm) {
           resetGame();
